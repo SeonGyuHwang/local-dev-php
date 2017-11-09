@@ -6,7 +6,7 @@ fork link -> https://github.com/naqoda/docker-centos-apache-php
 #셋팅
 1) https://www.docker.com/ 에서 OS에 맞는 docker 를 다운받아 설치
 
-2) 윈도우OS 의 경우 설치가 완료 되운 우측 하단 docker 아이콘에서 마우스 오른쪽 누른 후 
+2) 윈도우OS 의 경우 설치가 완료 되면 우측 하단 docker 아이콘에서 마우스 오른쪽 누른 후 
 컨테이너가 Linux 인지 확인 후 아닐경우 스위치 클릭
 
 3) setting 에 들어가서 Shared Drives -> 프로젝트 폴더 있는 드라이브 접근 허용 체크
