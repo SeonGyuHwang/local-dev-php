@@ -24,7 +24,7 @@ docker run -it {이미지명} /bin/bash
 
 6) hosts 파일에 아래와 같이 정의 우측 주소는 etc/httpd/run/vhost.conf 여기에 정의된 주소 그대로 사용
 
-127.0.0.1       dev-intra.directwed.co.kr
-127.0.0.1       dev-comm.directwed.co.kr
-127.0.0.1       dev-fair.directwed.co.kr
-127.0.0.1       dev-point.directwed.co.kr
+127.0.0.1       local-intra.directwed.co.kr
+127.0.0.1       local-comm.directwed.co.kr
+127.0.0.1       local-fair.directwed.co.kr
+127.0.0.1       local-point.directwed.co.kr
