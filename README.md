@@ -23,7 +23,10 @@ Dockerfile_ 뒤에 php7 과 php56 은 각 PHP버전 입니다.
 docker build -t "local-dev" .
 
 #실행
-docker run --name direct-comz-local -p 80:80 -d -v C:/Users/hsg37/IdeaProjects:/var/www/app -v C:/Users/hsg37/IdeaProjects/local-dev/etc/httpd/run/vhost.conf:/etc/httpd/conf.d/vhost.conf local-dev:latest
+docker run --name local-dev-php -p 80:80 -d -v C:/Users/hsg37/IdeaProjects:/var/www/app -v C:/Users/hsg37/IdeaProjects/local-dev/etc/httpd/run/vhost.conf:/etc/httpd/conf.d/vhost.conf local-dev:latest
 
 #bash 접속 방법
 docker run -it local-dev:latest /bin/bash
+
+6) 만약 etc/httpd/run/vhost.conf가 변경 되었을 시 아래 커맨드 실행 
+docker restart local-dev-php 
