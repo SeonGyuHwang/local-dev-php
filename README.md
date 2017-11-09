@@ -29,4 +29,4 @@ docker run --name local-dev-php -p 80:80 -d -v C:/Users/hsg37/IdeaProjects:/var/
 docker run -it local-php:latest /bin/bash
 
 6) 만약 etc/httpd/run/vhost.conf가 변경 되었을 시 아래 커맨드 실행 
-docker restart direct-comz-local 
+docker restart local-php
