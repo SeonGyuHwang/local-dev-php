@@ -34,3 +34,6 @@ docker run -it direct-comz:latest /bin/bash
 127.0.0.1       local-comm.directwed.co.kr
 127.0.0.1       local-fair.directwed.co.kr
 127.0.0.1       local-point.directwed.co.kr
+
+7) 만약 etc/httpd/run/vhost.conf가 변경 되었을 시 아래 커맨드 실행 
+docker restart direct-comz-local 
