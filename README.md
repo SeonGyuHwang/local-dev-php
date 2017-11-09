@@ -1,7 +1,9 @@
 fork link -> https://github.com/naqoda/docker-centos-apache-php
 
-※셋팅 방법※
+#도커(Docker) 에 대해 잘 정리해놓은 블로그 주소
+- https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
 
+#셋팅
 1) https://www.docker.com/ 에서 OS에 맞는 docker 를 다운받아 설치
 
 2) 윈도우OS 의 경우 설치가 완료 되운 우측 하단 docker 아이콘에서 마우스 오른쪽 누른 후 
@@ -13,7 +15,7 @@ fork link -> https://github.com/naqoda/docker-centos-apache-php
 
 5) 아래의 커맨드를 순서대로 수행 
 
-!!! 주의 !!! 
+#주의
 C:/Users/hsg37/IdeaProjects 이부분은 자신의 프로젝트 폴더의 경로로 변경 후 실행해야됨
 
 Dockerfile_ 뒤에 php7 과 php56 은 각 PHP버전 입니다.
