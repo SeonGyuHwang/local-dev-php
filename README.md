@@ -20,17 +20,10 @@ Dockerfile_ 뒤에 php7 과 php56 은 각 PHP버전 입니다.
 원하는 버전의 파일을 복사하여 _php{숫자}를 지우고 Dockerfile 만으로 저장 후 아래 스크립트를 실행하세요.
 
 #빌드
-docker build -t "direct-comz" .
+docker build -t "local-dev" .
 
 #실행
-docker run --name direct-comz-local -p 80:80 -d -v C:/Users/hsg37/IdeaProjects:/var/www/app -v C:/Users/hsg37/IdeaProjects/local-dev/etc/httpd/run/vhost.conf:/etc/httpd/conf.d/vhost.conf direct-comz:latest
+docker run --name direct-comz-local -p 80:80 -d -v C:/Users/hsg37/IdeaProjects:/var/www/app -v C:/Users/hsg37/IdeaProjects/local-dev/etc/httpd/run/vhost.conf:/etc/httpd/conf.d/vhost.conf local-dev:latest
 
 #bash 접속 방법
-docker run -it direct-comz:latest /bin/bash
-
-6) hosts 파일에 아래와 같이 정의 우측 주소는 etc/httpd/run/vhost.conf 여기에 정의된 주소 그대로 사용
-
-127.0.0.1       local-intra.directwed.co.kr
-127.0.0.1       local-comm.directwed.co.kr
-127.0.0.1       local-fair.directwed.co.kr
-127.0.0.1       local-point.directwed.co.kr
+docker run -it local-dev:latest /bin/bash
