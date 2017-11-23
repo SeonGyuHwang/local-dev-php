@@ -34,7 +34,3 @@ docker run -it local-php:latest /bin/bash
 docker restart local-php
 
 
-#Issue
-1. docker command did not complete within the allowed timeout. output 해당 사항으로 Crash 리포트 생길경우
-윈도우 설정 -> 시스템 -> 전원 및 절전 -> 추가 전원 설정 -> 전원 단추 작동 설정 -> 종료 설정 에서
-빠른 시작 켜기가 활성화 되어있을때 문제 발생되는 문제로 해당사항 체크 해제 후 변경 내용 저장 후 재시작 할것.
