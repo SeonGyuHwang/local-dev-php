@@ -16,7 +16,7 @@ fork link -> https://github.com/naqoda/docker-centos-apache-php
 5) 아래의 커맨드를 순서대로 수행 
 
 #주의
-C:/Users/hsg37/IdeaProjects 이부분은 자신의 프로젝트 폴더의 경로로 변경 후 실행해야됨
+/C/IdeaProjects 이부분은 자신의 프로젝트 폴더의 경로로 변경 후 실행해야됨
 
 Dockerfile_ 뒤에 php7 과 php56 은 각 PHP버전 입니다.
 원하는 버전의 파일을 복사하여 _php{숫자}를 지우고 Dockerfile 만으로 저장 후 아래 스크립트를 실행하세요.
@@ -25,7 +25,7 @@ Dockerfile_ 뒤에 php7 과 php56 은 각 PHP버전 입니다.
 docker build -t "local-php" .
 
 #실행
-docker run --privileged --name local-dev-php -p 80:80 -d -v C:/Users/hsg37/IdeaProjects:/var/www/app -v C:/Users/hsg37/IdeaProjects/local-dev/etc/httpd/run/vhost.conf:/etc/httpd/conf.d/vhost.conf local-php:latest
+docker run --privileged --name local-dev-php -p 80:80 -d -v /C/IdeaProjects:/var/www/app -v /C/IdeaProjects/local-dev/etc/httpd/run/vhost.conf:/etc/httpd/conf.d/vhost.conf local-php:latest
 
 #bash 접속 방법
 docker run -it local-php:latest /bin/bash
