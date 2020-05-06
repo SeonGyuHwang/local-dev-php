@@ -1,0 +1,11 @@
+web:
+    container_name: local-dev-php
+    build: .
+    ports:
+        - "80:80"
+        - "443:443"
+    environment:
+        - IS_DEV=Y
+    volumes:
+        - ./etc/vhost.conf:/etc/httpd/conf.d/vhost.conf
+        - /D/workspace:/var/www/app
