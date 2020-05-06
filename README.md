@@ -31,7 +31,11 @@ docker-compose up -d
 
 #vhost.conf가 변경 되었을 시 아래 커맨드 실행
 ~~~
-docker restart local-dev-php
+docker restart local-dev-php 
+
+또는
+
+Docker 대쉬보드에서 해당 컨테이너 Restart 아이콘 클릭
 ~~~
 
 #bash 접속 방법
