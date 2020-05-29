@@ -40,7 +40,7 @@ Docker 대쉬보드에서 해당 컨테이너 Restart 아이콘 클릭
 
 #bash 접속 방법
 ~~~
-docker run -it docker_web:latest /bin/bash
+docker run -it hsg377/php71:latest /bin/bash
 
 또는
  
