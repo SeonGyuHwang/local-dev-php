@@ -1,6 +1,7 @@
 web:
     container_name: local-dev-php
-    build: .
+    image: hsg377/php71:latest
+    #build: .
     ports:
         - "80:80"
         - "443:443"
