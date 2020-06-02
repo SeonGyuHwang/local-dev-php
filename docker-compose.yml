@@ -9,4 +9,5 @@ web:
         - IS_DEV=Y
     volumes:
         - ./etc/vhost.conf:/etc/httpd/conf.d/vhost.conf
-        - /D/workspace:/var/www/app
+        - /mnt/d/workspace:/var/www/app # WSL2 Path
+        #- /D/workspace:/var/www/app # Mount Path
